@@ -5,9 +5,9 @@ def launch(games):
     print('Welcome to the brain games!')
     name = prompt.string('May i have your name ? ')
     print(f'Hello, {name}!')
-    score = 0
     print(games.RULES)
 
+    score = 0
     while score < 3:
         task, result, = games.game_generator()
         print(f'Question: {task}')
