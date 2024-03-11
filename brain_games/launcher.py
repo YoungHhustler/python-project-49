@@ -16,7 +16,8 @@ def launch(games):
             print('Correct!')
         score += 1
         if answer != result:
-            print(f'\'{answer}\' is wrong answer ;(. Correct answer was \'{result}\'')
+            print(f'\'{answer}\' is wrong answer ;(.\
+Correct answer was \'{result}\'')
             print(f'Let\'s try again {name}')
             break
         if score == 3:
