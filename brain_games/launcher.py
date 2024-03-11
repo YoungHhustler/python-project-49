@@ -18,7 +18,7 @@ def launch(games):
         if answer != result:
             print(f'\'{answer}\' is wrong answer ;(.\
 Correct answer was \'{result}\'')
-            print(f'Let\'s try again {name}')
+            print(f'Let\'s try again, {name}!')
             break
         if score == 3:
             print(f'Congratulations, {name}!')
