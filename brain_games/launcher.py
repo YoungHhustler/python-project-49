@@ -4,8 +4,7 @@ import prompt
 def launch(games):
     print('Welcome to the brain games!')
     name = prompt.string('May i have your name ? ')
-    print(f'Hello, {name}!')
-    print(games.RULES)
+    print(f'Hello, {name}!\n{games.RULES}')
 
     score = 0
     while score < 3:
