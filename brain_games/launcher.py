@@ -1,5 +1,7 @@
 import prompt
 
+SCORE_FOR_WIN = 3
+
 
 def launch(games):
     print('Welcome to the brain games!')
@@ -7,7 +9,8 @@ def launch(games):
     print(f'Hello, {name}!\n{games.RULES}')
 
     score = 0
-    while score < 3:
+
+    while score < SCORE_FOR_WIN:
         task, result, = games.game_generator()
         print(f'Question: {task}')
         answer = input('Your answer: ')

@@ -10,7 +10,7 @@ def math_operation(a, b, operation):
         result = f'{a - b}'
     else:
         result = f'{a * b}'
-    return str(result)
+    return result
 
 
 def game_generator():
@@ -19,4 +19,4 @@ def game_generator():
     operation = choice(['+', '-', '*'])
     task = f'{a} {operation} {b}'
     result = math_operation(a, b, operation)
-    return task, result
+    return task, str(result)
